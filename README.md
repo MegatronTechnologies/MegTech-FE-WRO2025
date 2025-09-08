@@ -1,4 +1,4 @@
-# MegTech — WRO 2025 Future Engineers (Self-Driving Car)
+# MegTech — WRO 2025 Future Engineers
 
 This repository documents **Megatron Technologies (MegTech)** and our autonomous vehicle developed for the **World Robot Olympiad™ 2025 — Future Engineers Category** under the theme *“The Future of Robots”*.  
 It contains our engineering progress, vehicle design, wiring, code logic, photos, and demonstration video.  
