@@ -193,8 +193,34 @@ This approach ensures **repeatable and safe behavior** while respecting the comp
 
 ---
 
-### Task 2 — [To be added]
-The code and logic explanation for **Task 2** will be uploaded and documented closer to the competition.  
+### Task 2 — Obstacle Challenge
+
+The second task focuses on **navigating through obstacles**, detecting colored cubes, and making decisions in real time using the camera and lidar.  
+It combines **perception (object recognition)** with **path planning and steering** to complete the challenge autonomously.  
+
+**Main logic flow:**
+1. **System Initialization**  
+   - Raspberry Pi 5 sets up the RealSense depth camera, Lidar, and Pi Camera Module 3.  
+   - Motors, servo, and safety systems are initialized.  
+
+2. **Start Condition**  
+   - Program waits for a physical button press before beginning.  
+
+3. **Forward Driving & Obstacle Detection**  
+   - Vehicle drives forward while continuously scanning with **Lidar** and the **depth camera**.  
+   - If an obstacle or cube is detected, the robot slows down and prepares for a maneuver.  
+
+4. **Cube Recognition & Decision Making**  
+   - **Red cube:** vehicle turns right.  
+   - **Green cube:** vehicle turns left.  
+   - Steering is handled by the MG996R servo, while the rear DC motor provides controlled movement.  
+
+5. **Navigation & Continuation**  
+   - After avoiding the obstacle, the vehicle returns to its lane and continues forward.  
+   - Process repeats until the challenge ends.  
+
+👉 Full code: [Task 2 Folder (Google Drive)](Source%20Codes/task2/)
+
 
 ---
 
