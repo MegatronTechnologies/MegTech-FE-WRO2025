@@ -93,7 +93,7 @@ His versatility helps bridge the gap between technology development and project 
 ## 🚗 Vehicle Overview
 
 <p align="center">
-  <img src="Vehicle%20Photos/View2.jpg" width="500"/>
+  <img src="Vehicle%20Photos/View.jpg" width="500"/>
 </p>
 
 ### Specifications
