@@ -97,8 +97,8 @@ His versatility helps bridge the gap between technology development and project 
 </p>
 
 ### Specifications
-- **Dimensions:** 25 cm (L) × 13.5 cm (W) × 14.5 cm (H)  
-- **Weight:** 1.425 kg  
+- **Dimensions:** 25 cm (L) × 13.5 cm (W) × 11 cm (H)  
+- **Weight:** 1.100 kg  
 - **Voltage Range:** 11.1 V – 22.2 V (4S LiPo, 14.8 V, 4000 mAh, 60C)  
 - **Drive System:** Rear-wheel drive (single DC motor with encoder)  
 - **Steering Geometry:** Ackermann steering (servo-controlled front axle)  
