@@ -111,6 +111,44 @@ The LiPo battery capacity ensures the robot can complete **both tasks with over 
 
 ---
 
+## ⚙️ Motor Axle System  
+
+Our vehicle uses a **single DC motor with encoder** connected to a **shared rear axle**.  
+The transmission is achieved **through gears**, allowing efficient torque delivery to both wheels.  
+Since the wheels are mechanically linked by the axle, they always rotate evenly, ensuring stable straight-line movement.  
+
+Although the motor is equipped with an encoder, in our current implementation **encoder feedback is not used** — the system runs at fixed motor speeds controlled via the L298N H-Bridge.  
+
+---
+
+## 🛞 Ackermann Steering System  
+
+The steering mechanism is based on a **servo-driven rack-and-pinion system** using the **MG996R servo motor**.  
+- In the *Open Challenge*, the steering angle can vary between **0° and 180°**, allowing flexible maneuvering.  
+- In the *Obstacle Challenge*, the steering is automatically calculated depending on sensor feedback.  
+
+The two **front wheels are mechanically linked** by a steering rack, which is directly connected to the servo.  
+While it does not implement a perfect mathematical Ackermann geometry, the system provides a **practical steering wheel chassis** with sufficient accuracy for both challenges.  
+
+---
+
+## 🔋 Power and Sense Management  
+
+Power distribution is designed to be **simple and reliable**:  
+- The **14.8 V LiPo battery (4S, 4000 mAh, 60C)** directly powers the **L298N motor driver**.  
+- A **voltage regulator** converts battery output to **5 V**, supplying the Raspberry Pi 5 and all sensors.  
+- The **DC motor** operates at ~12 V, receiving input directly through the L298N driver.  
+
+**Protection & Safety**  
+- The Raspberry Pi 5 includes a built-in fuse, ensuring the main controller is safeguarded.  
+- The only vulnerable component is the L298N, which serves as the primary motor interface.  
+
+**Sensor and Control Management**  
+- All sensors (Intel RealSense D455, LDROBOT Lidar) are processed **in real time on the Raspberry Pi 5**, with no additional microcontrollers.  
+- The **Raspberry Pi directly controls both the DC motor and the servo** via the L298N and PWM outputs, ensuring minimal latency and a clean system architecture.  
+
+---
+
 ## 🔌 Wiring
 
 A complete wiring diagram is provided in PDF format:  
