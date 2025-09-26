@@ -219,7 +219,7 @@ It combines **perception (object recognition)** with **path planning and steerin
    - After avoiding the obstacle, the vehicle returns to its lane and continues forward.  
    - Process repeats until the challenge ends.  
 
-👉 Full code: [Task 2 Folder (Google Drive)](Source%20Codes/task2/)
+👉 Full code: [Task 2 Folder](Source%20Codes/task2/)
 
 
 ---
