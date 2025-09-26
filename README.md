@@ -169,8 +169,8 @@ A video of the robot driving autonomously is available in the repository:
 
 ## 📚 Knowledge Base
 
-- **AI & Perception:** Depth vision via RealSense D455, cube detection via Raspberry Pi Camera Module 3.  
-- **Navigation:** Lidar scanning and obstacle avoidance.  
+- **AI & Perception:** Depth vision, Object&Colour detection, Speed control.  
+- **Navigation:** Real-time scanning and obstacle avoidance.  
 - **Control:** Ackermann steering with servo, rear-wheel drive with encoder feedback.  
 - **Safety:** Button-controlled start, obstacle stopping logic, LiPo power safety margin.  
 - **Teamwork:** Integration of software, hardware, and presentation.  
